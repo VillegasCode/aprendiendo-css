@@ -1,3 +1,9 @@
+/* Para obligar al navegador a trabajar con estas características */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Atributos para etiqueta */
 body{
     background-color: lightgray;
@@ -21,6 +27,44 @@ header{
     height: 100px;
     width: 100%;
     margin: 0px;
+    /* ALINEAR TEXTO */
+    text-align: center;
+
+    /* ALINEAR AL CENTRO DE LA CAJA PONER EL MISMO TAMAÑO DE LA ALTURA DE LA CAJA */
+    line-height: 100px;
+
+    /* Color del texto */
+    color: white;
+
+    /* Crear un borde punteado debajo de la caja */
+    border-bottom: 3px dashed black;
+}
+
+nav{
+    background-color: lightblue;
+    height: 50px;
+    border: 1px solid black;
+}
+
+/* Poner atributos al menu */
+nav ul li{
+    /*Para poner los elementos uno al costado del otro*/
+    float: left;
+
+    /* Quitar los estilos de la lista */
+    list-style: none;
+
+    /* Poner un margen a todos los elementos para que se separen entre si */
+    margin: 10px;
+
+    /* Centrar verticalmente el texto dentro de la caja */
+    line-height: 30px;
+}
+
+
+/* Creamos una clase para que los elementos de abajo no floten como en el menu */
+.clearfix{
+    clear: both;
 }
 
 /* Atributos para Clase */
