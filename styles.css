@@ -69,18 +69,22 @@ nav ul li{
 
 #content{
     float: left;
-    width: 80%;
+    width: calc(80% - 80px);
     background-color: green;
     min-height: 500px;
+    padding: 40px;
 }
 
 aside{
     float: left;
-    width: 20%;
+    width: calc(20% - 20px);
     background-color: orange;
     min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
-
 
 footer{
     background-color: black;
@@ -92,5 +96,20 @@ footer{
 
 /* Atributos para Clase */
 .article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
 
+/* Atributos para el 1er hijo de la clase article */
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* Seleccionar todos los elementos H2 que hay dentro de esa clase */
+.article h2{
+    font-size: 25px;
 }
